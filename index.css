@@ -1,0 +1,77 @@
+/* bar */
+.body{
+  margin: 0px;
+  font-size: 1.3rem;
+}
+.body_main{
+  width: 75%;
+  color: white;
+  margin: 10px auto;
+}
+.body_main_back{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30%;
+  right: 0;
+  z-index: -2;
+  /* background-image: url('./image/pexels-harrison-haines-5922523.jpg'); */
+  background-image: url('./image/pexels-paul-loh-233698.jpg');
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+.body_main_mask{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30%;
+  right: 0;
+  z-index: -1;
+  background-color: #2424246c;
+backdrop-filter: blur(1px);
+}
+.logo{
+  font-size: 2rem;
+  text-align:start;
+}
+.bartext{
+  line-height: 50px;
+  cursor: pointer;
+  text-align: end;
+}
+.baritem{
+  width: 20%;
+  display: inline-block;
+}
+
+
+
+/* body */
+.main_body{
+  margin-top: calc(32vh);
+}
+.main_title{
+  font-size: 13rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.down_box{
+  position: absolute;
+  bottom: 0px;
+  height: calc(12vh);
+  width: calc(10vw);
+}
+.down{
+  width: 4rem;
+  height: 4rem;
+  margin-top: 0px;
+  animation: infinite downLoop 1.5s;
+}
+@keyframes downLoop {
+  from {
+    margin-top: 0px;
+  }
+  to{
+    margin-top: 50px;
+  }
+}
